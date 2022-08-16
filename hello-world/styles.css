@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("./assets/black-brick-wall.jpg");
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 44rem;
+    position: relative;
+    animation: mymove 5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes mymove {
+  from {left: 0rem;}
+  to {left: 25rem;}
+}
+
+.font {
+    color: #F0F8FF;
+    font-size: 6rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 22rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .font {
+        font-size: 2rem;
+    }
+
+    @keyframes mymove {
+        from {left: 0rem;}
+        to {left: 3.5rem;}
+      }
+}
